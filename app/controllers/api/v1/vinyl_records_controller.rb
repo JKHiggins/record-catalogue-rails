@@ -5,7 +5,7 @@ module API
       skip_before_action :verify_authenticity_token
 
       def index
-        render json: VinylRecord.all
+        render json: {"records" => VinylRecord.all}
       end
 
       def show
